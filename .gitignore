@@ -1,0 +1,28 @@
+# web_storm
+.idea/
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# mac os x
+.DS_Store
+
+# Ignore artifacts
+dist
+
+# node_modules
+node_modules
+
+# project specific
+electron-builder.env
+
+projects/native/src/config
+
+projects/webapps/projects/lib-logic/src/config
+
+projects/webapps/projects/lib-ds/src/config
