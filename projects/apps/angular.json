@@ -102,6 +102,11 @@
         },
         "lib-common": {
             "projectType": "library",
+            "schematics": {
+                "@schematics/angular:component": {
+                    "style": "scss"
+                }
+            },
             "root": "projects/libs/lib-common",
             "sourceRoot": "projects/libs/lib-common/src",
             "prefix": "lib",
@@ -132,6 +137,12 @@
                     }
                 }
             }
+        }
+    },
+    "cli": {
+        "analytics": false,
+        "cache": {
+            "enabled": false
         }
     }
 }
