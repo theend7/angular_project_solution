@@ -1,6 +1,6 @@
 # Angular Project Solution
 
-This repository is designed to help you solve complex Angular projects alongside their libraries and build each of them separately. Each Angular project within this repository will have its own build, and each library will undergo its individual compilation process.
+This repository is designed to help you solve complex Angular projects alongside their libraries and build each of them separately. Each Angular project within this repository will have its own compile/build, and each library will undergo its individual compilation process.
 
 ## Overview
 
