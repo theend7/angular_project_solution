@@ -45,7 +45,7 @@ Follow these steps to get started with the Angular Project Solution Repository:
 
 Explore each project and library in their respective directories. Refer to the individual `README.md` files within each directory for detailed project descriptions, features, and build instructions.
 
-## Library Dependencies Patern (This is just an example for now, every library will be explained in detail and its own execution order)
+## Library Dependencies Patern
 1. **App-1**:
     - _`LibCommon` is the foundational library and must be executed first._ It sets up essential configurations and provides core functionalities.
     - _`Lib2` depends on `LibCommon`. It utilizes functionalities provided by `Lib2` and extends them._ This library should execute after `LibCommon` has finished its initialization.
