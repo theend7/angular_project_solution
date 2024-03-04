@@ -4,6 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
 import { LibCommonModule } from 'lib-common';
+import { Lib1Module } from 'lib1';
+import { Lib2Module } from 'lib2';
+import { Lib3Module } from 'lib3';
 
 @NgModule({
   declarations: [
@@ -11,7 +14,10 @@ import { LibCommonModule } from 'lib-common';
   ],
   imports: [
     BrowserModule,
-    LibCommonModule
+    LibCommonModule,
+    Lib1Module,
+    Lib2Module,
+    Lib3Module
   ],
   providers: [],
   bootstrap: [AppComponent],

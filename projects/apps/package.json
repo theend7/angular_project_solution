@@ -2,7 +2,9 @@
     "name": "apps",
     "version": "0.0.0",
     "scripts": {
+        "compile": "npm run clean && npm-run-all compile-lib-common compile-lib1 compile-lib2 compile-lib3 compile-lib4 compile-lib5 compile-app-1 compile-app-2",
         "clean": "rimraf dist",
+
         "lib-common-component:add": "ng g c --prefix common --project lib-common components/$npm_config_name",
 
         "compile-lib-common": "ng build lib-common --configuration production",
@@ -39,11 +41,14 @@
         "capp-2": "npm-run-all compile-lib-common compile-app-2",
 
 
-        "serve-app-1": "npm run wait-lib-common && ng serve app-1 -o --port 4201",
+        "wait-lib-common-build-lib2": "npm run wait-lib-common && npm run build-lib2",
+        "wait-lib2-build-lib3": "npm run wait-lib2 && npm run build-lib3",
+        "wait-lib3-build-lib1": "npm run wait-lib3 && npm run build-lib1",
+        "serve-app-1": "npm run wait-lib1 && ng serve app-1 -o --port 4201",
+
         "serve-app-2": "npm run wait-lib-common && ng serve app-2 -o --port 4202",
 
-
-        "app-1": "npm run clean && npm-run-all --parallel build-lib-common serve-app-1",
+        "app-1": "npm run clean && npm-run-all --parallel build-lib-common wait-lib-common-build-lib2 wait-lib2-build-lib3 wait-lib3-build-lib1 serve-app-1",
         "app-2": "npm run clean && npm-run-all --parallel build-lib-common serve-app-2"
 
     },
