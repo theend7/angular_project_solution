@@ -6,6 +6,7 @@
         "lib-common-component:add": "ng g c --prefix common --project lib-common components/$npm_config_name",
 
         "compile-lib-common": "ng build lib-common --configuration production",
+        "compile-lib1": "ng build lib1 --configuration production",
 
         "compile-app-1": "ng build app-1 --configuration production",
         "compile-app-2": "ng build app-2 --configuration production",
