@@ -52,12 +52,6 @@ Explore each project and library in their respective directories. Refer to the i
     - `Lib3` depends on `Lib2`. It utilizes functionalities provided by `Lib2` and extends them. This library should execute after `Lib2` has finished its initialization.
     - `Lib1` depends on `Lib3`. It utilizes functionalities provided by `Lib3` and extends them. This library should execute after `Lib3` has finished its initialization.
 
-2. **library2**: Depends on `library1`. It utilizes functionalities provided by `library1` and extends them. This library should execute after `library1` has finished its initialization.
-
-3. **library3**: Depends on both `library1` and `library2`. It requires functionalities from both libraries and must wait for both to complete before executing.
-
-4. **... (Additional Libraries)**: Libraries further down the line may have dependencies on previously mentioned libraries and should follow a similar pattern.
-
 ## Notes
 
 - Make sure to check the documentation of each project for any specific requirements or additional notes.
