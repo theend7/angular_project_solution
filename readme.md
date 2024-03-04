@@ -47,10 +47,10 @@ Explore each project and library in their respective directories. Refer to the i
 
 ## Library Dependencies Patern (This is just an example for now, every library will be explained in detail and its own execution order)
 1. **App-1**:\
-    _LibCommon is the foundational library and must be executed first._ It sets up essential configurations and provides core functionalities.\
-    _Lib2 depends on `LibCommon`. It utilizes functionalities provided by `Lib2` and extends them._ This library should execute after `LibCommon` has finished its initialization.\
-    _Lib3 depends on `Lib2`. It utilizes functionalities provided by `Lib3` and extends them._ This library should execute after `Lib2` has finished its initialization.\
-    _Lib1 depends on `Lib3`. It utilizes functionalities provided by `Lib1` and extends them._ This library should execute after `Lib3` has finished its initialization.
+    _`LibCommon` is the foundational library and must be executed first._ It sets up essential configurations and provides core functionalities.\
+    _`Lib2` depends on `LibCommon`. It utilizes functionalities provided by `Lib2` and extends them._ This library should execute after `LibCommon` has finished its initialization.\
+    _`Lib3` depends on `Lib2`. It utilizes functionalities provided by `Lib3` and extends them._ This library should execute after `Lib2` has finished its initialization.\
+    _`Lib1` depends on `Lib3`. It utilizes functionalities provided by `Lib1` and extends them._ This library should execute after `Lib3` has finished its initialization.\
 
 2. **library2**: Depends on `library1`. It utilizes functionalities provided by `library1` and extends them. This library should execute after `library1` has finished its initialization.
 
