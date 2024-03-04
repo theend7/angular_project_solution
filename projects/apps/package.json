@@ -12,7 +12,10 @@
         "compile-app-2": "ng build app-2 --configuration production",
 
         "build-lib-common": "ng build lib-common --watch",
+        "build-lib1": "ng build lib1 --watch",
+
         "wait-lib-common": "wait-on dist/lib-common/public-api.d.ts",
+        "wait-lib1": "wait-on dist/lib1/public-api.d.ts",
 
         "capp-1": "npm-run-all compile-lib-common compile-app-1",
         "capp-2": "npm-run-all compile-lib-common compile-app-2",
