@@ -7,15 +7,19 @@
 
         "compile-lib-common": "ng build lib-common --configuration production",
         "compile-lib1": "ng build lib1 --configuration production",
+        "compile-lib2": "ng build lib2 --configuration production",
 
         "compile-app-1": "ng build app-1 --configuration production",
         "compile-app-2": "ng build app-2 --configuration production",
 
         "build-lib-common": "ng build lib-common --watch",
         "build-lib1": "ng build lib1 --watch",
+        "build-lib2": "ng build lib2 --watch",
+
 
         "wait-lib-common": "wait-on dist/lib-common/public-api.d.ts",
         "wait-lib1": "wait-on dist/lib1/public-api.d.ts",
+        "wait-lib2": "wait-on dist/lib2/public-api.d.ts",
 
         "capp-1": "npm-run-all compile-lib-common compile-app-1",
         "capp-2": "npm-run-all compile-lib-common compile-app-2",
