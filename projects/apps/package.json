@@ -10,6 +10,8 @@
         "compile-lib2": "ng build lib2 --configuration production",
         "compile-lib3": "ng build lib3 --configuration production",
         "compile-lib4": "ng build lib4 --configuration production",
+        "compile-lib5": "ng build lib5 --configuration production",
+
 
 
         "compile-app-1": "ng build app-1 --configuration production",
@@ -20,6 +22,7 @@
         "build-lib2": "ng build lib2 --watch",
         "build-lib3": "ng build lib3 --watch",
         "build-lib4": "ng build lib4 --watch",
+        "build-lib5": "ng build lib5 --watch",
 
 
 
@@ -28,6 +31,8 @@
         "wait-lib2": "wait-on dist/lib2/public-api.d.ts",
         "wait-lib3": "wait-on dist/lib3/public-api.d.ts",
         "wait-lib4": "wait-on dist/lib4/public-api.d.ts",
+        "wait-lib5": "wait-on dist/lib5/public-api.d.ts",
+
 
 
         "capp-1": "npm-run-all compile-lib-common compile-app-1",
