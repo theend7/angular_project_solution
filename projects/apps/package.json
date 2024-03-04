@@ -8,15 +8,22 @@
         "compile-lib-common": "ng build lib-common --configuration production",
 
         "compile-app-1": "ng build app-1 --configuration production",
+        "compile-app-2": "ng build app-2 --configuration production",
 
         "build-lib-common": "ng build lib-common --watch",
         "wait-lib-common": "wait-on dist/lib-common/public-api.d.ts",
 
         "capp-1": "npm-run-all compile-lib-common compile-app-1",
+        "capp-2": "npm-run-all compile-lib-common compile-app-2",
+
 
         "serve-app-1": "npm run wait-lib-common && ng serve app-1 -o --port 4201",
+        "serve-app-2": "npm run wait-lib-common && ng serve app-2 -o --port 4202",
 
-        "app-1": "npm run clean && npm-run-all --parallel build-lib-common serve-app-1"
+
+        "app-1": "npm run clean && npm-run-all --parallel build-lib-common serve-app-1",
+        "app-2": "npm run clean && npm-run-all --parallel build-lib-common serve-app-2"
+
     },
     "private": true,
     "dependencies": {
