@@ -32,13 +32,13 @@
                 "dist/lib6"
             ],
             "lib7": [
-              "dist/lib7"
+                "dist/lib7"
             ],
             "lib8": [
-              "dist/lib8"
+                "dist/lib8"
             ],
             "lib9": [
-              "dist/lib9"
+                "dist/lib9"
             ]
         },
         "noFallthroughCasesInSwitch": true,
