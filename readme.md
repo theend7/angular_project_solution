@@ -57,6 +57,12 @@ Explore each project and library in their respective directories. Refer to the i
     - `Lib5` depends on `Lib4`. It utilizes functionalities provided by `Lib4` and extends them. This library should execute after `Lib4` has finished its initialization.
     - `Lib1` depends on `Lib5`. It utilizes functionalities provided by `Lib5` and extends them. This library should execute after `Lib5` has finished its initialization.
     - `Lib3` depends on `Lib1`. It utilizes functionalities provided by `Lib1` and extends them. This library should execute after `Lib1` has finished its initialization.
+3. **App-3**:
+    - `LibCommon` is the foundational library and must be executed first. It sets up essential configurations and provides core functionalities.
+    - `Lib6` depends on `LibCommon`. It utilizes functionalities provided by `LibCommon` and extends them. This library should execute after `LibCommon` has finished its initialization.
+    - `Lib7` depends on `Lib6`. It utilizes functionalities provided by `Lib6` and extends them. This library should execute after `Lib6` has finished its initialization.
+    - `Lib8` depends on `Lib7`. It utilizes functionalities provided by `Lib7` and extends them. This library should execute after `Lib7` has finished its initialization.
+    - `Lib9` depends on `Lib8`. It utilizes functionalities provided by `Lib8` and extends them. This library should execute after `Lib8` has finished its initialization.
 
 ## Notes
 
