@@ -2,7 +2,7 @@
     "name": "apps",
     "version": "0.0.0",
     "scripts": {
-        "compile": "npm run clean && npm-run-all compile-lib-common compile-lib1 compile-lib2 compile-lib3 compile-lib4 compile-lib5 compile-lib6 compile-lib7 compile-app-1 compile-app-2 compile-app-3",
+        "compile": "npm run clean && npm-run-all compile-lib-common compile-lib1 compile-lib2 compile-lib3 compile-lib4 compile-lib5 compile-lib6 compile-lib7 compile-lib8 compile-app-1 compile-app-2 compile-app-3",
         "clean": "rimraf dist",
 
         "lib-common-component:add": "ng g c --prefix common --project lib-common components/$npm_config_name",
@@ -15,6 +15,8 @@
         "compile-lib5": "ng build lib5 --configuration production",
         "compile-lib6": "ng build lib6 --configuration production",
         "compile-lib7": "ng build lib7 --configuration production",
+        "compile-lib8": "ng build lib8 --configuration production",
+
 
         "compile-app-1": "ng build app-1 --configuration production",
         "compile-app-2": "ng build app-2 --configuration production",
@@ -27,8 +29,8 @@
         "build-lib4": "ng build lib4 --watch",
         "build-lib5": "ng build lib5 --watch",
         "build-lib6": "ng build lib6 --watch",
-        "build-lib7": "ng build lib6 --watch",
-
+        "build-lib7": "ng build lib7 --watch",
+        "build-lib8": "ng build lib8 --watch",
 
         "wait-lib-common": "wait-on dist/lib-common/public-api.d.ts",
         "wait-lib1": "wait-on dist/lib1/public-api.d.ts",
@@ -37,14 +39,12 @@
         "wait-lib4": "wait-on dist/lib4/public-api.d.ts",
         "wait-lib5": "wait-on dist/lib5/public-api.d.ts",
         "wait-lib6": "wait-on dist/lib6/public-api.d.ts",
-        "wait-lib7": "wait-on dist/lib6/public-api.d.ts",
-
+        "wait-lib7": "wait-on dist/lib7/public-api.d.ts",
+        "wait-lib8": "wait-on dist/lib8/public-api.d.ts",
 
         "capp-1": "npm-run-all compile-lib-common compile-app-1",
         "capp-2": "npm-run-all compile-lib-common compile-app-2",
         "capp-3": "npm-run-all compile-lib-common compile-app-3",
-
-
 
         "wait-lib-common-build-lib2": "npm run wait-lib-common && npm run build-lib2",
         "wait-lib2-build-lib3": "npm run wait-lib2 && npm run build-lib3",

@@ -33,6 +33,9 @@
             ],
             "lib7": [
               "dist/lib7"
+            ],
+            "lib8": [
+              "dist/lib8"
             ]
         },
         "noFallthroughCasesInSwitch": true,
