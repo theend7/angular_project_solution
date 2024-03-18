@@ -152,7 +152,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "outputPath": "dist/app-2",
+                        "outputPath": "../../dist/app-2",
                         "index": "projects/app-2/src/index.html",
                         "main": "projects/app-2/src/main.ts",
                         "polyfills": [
@@ -249,7 +249,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "outputPath": "dist/app-3",
+                        "outputPath": "../../dist/app-3",
                         "index": "projects/app-3/src/index.html",
                         "main": "projects/app-3/src/main.ts",
                         "polyfills": [
