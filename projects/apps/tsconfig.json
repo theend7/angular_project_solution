@@ -30,6 +30,9 @@
             ],
             "lib6": [
                 "dist/lib6"
+            ],
+            "lib7": [
+              "dist/lib7"
             ]
         },
         "noFallthroughCasesInSwitch": true,
