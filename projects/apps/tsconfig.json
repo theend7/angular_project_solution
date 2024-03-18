@@ -27,6 +27,9 @@
             ],
             "lib5": [
                 "dist/lib5"
+            ],
+            "lib6": [
+              "dist/lib6"
             ]
         },
         "noFallthroughCasesInSwitch": true,

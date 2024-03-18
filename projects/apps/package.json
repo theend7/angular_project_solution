@@ -13,11 +13,11 @@
         "compile-lib3": "ng build lib3 --configuration production",
         "compile-lib4": "ng build lib4 --configuration production",
         "compile-lib5": "ng build lib5 --configuration production",
-
-
+        "compile-lib6": "ng build lib6 --configuration production",
 
         "compile-app-1": "ng build app-1 --configuration production",
         "compile-app-2": "ng build app-2 --configuration production",
+        "compile-app-3": "ng build app-3 --configuration production",
 
         "build-lib-common": "ng build lib-common --watch",
         "build-lib1": "ng build lib1 --watch",
@@ -25,8 +25,7 @@
         "build-lib3": "ng build lib3 --watch",
         "build-lib4": "ng build lib4 --watch",
         "build-lib5": "ng build lib5 --watch",
-
-
+        "build-lib6": "ng build lib6 --watch",
 
         "wait-lib-common": "wait-on dist/lib-common/public-api.d.ts",
         "wait-lib1": "wait-on dist/lib1/public-api.d.ts",
@@ -34,11 +33,12 @@
         "wait-lib3": "wait-on dist/lib3/public-api.d.ts",
         "wait-lib4": "wait-on dist/lib4/public-api.d.ts",
         "wait-lib5": "wait-on dist/lib5/public-api.d.ts",
-
-
+        "wait-lib6": "wait-on dist/lib6/public-api.d.ts",
 
         "capp-1": "npm-run-all compile-lib-common compile-app-1",
         "capp-2": "npm-run-all compile-lib-common compile-app-2",
+        "capp-3": "npm-run-all compile-lib-common compile-app-3",
+
 
 
         "wait-lib-common-build-lib2": "npm run wait-lib-common && npm run build-lib2",
@@ -52,8 +52,13 @@
         "wait-lib1-build-lib3": "npm run wait-lib1 && npm run build-lib3",
         "wait-lib3-serve-app-2": "npm run wait-lib3 && ng serve app-2 -o --port 4202",
 
+        "wait-lib-common-build-lib6": "npm run wait-lib-common && npm run build-lib6",
+        "wait-lib6-serve-app-3": "npm run wait-lib6 && ng serve app-3 -o --port 4203",
+
         "app-1": "npm run clean && npm-run-all --parallel build-lib-common wait-lib-common-build-lib2 wait-lib2-build-lib3 wait-lib3-build-lib1 wait-lib1-serve-app-1",
-        "app-2": "npm run clean && npm-run-all --parallel build-lib-common wait-lib-common-build-lib4 wait-lib4-build-lib5 wait-lib5-build-lib1 wait-lib1-build-lib3 wait-lib3-serve-app-2"
+        "app-2": "npm run clean && npm-run-all --parallel build-lib-common wait-lib-common-build-lib4 wait-lib4-build-lib5 wait-lib5-build-lib1 wait-lib1-build-lib3 wait-lib3-serve-app-2",
+        "app-3": "npm run clean && npm-run-all --parallel build-lib-common wait-lib-common-build-lib6 wait-lib6-serve-app-3"
+
 
     },
     "private": true,
