@@ -2,7 +2,7 @@
     "name": "apps",
     "version": "0.0.0",
     "scripts": {
-        "compile": "npm run clean && npm-run-all compile-lib-common compile-lib1 compile-lib2 compile-lib3 compile-lib4 compile-lib5 compile-app-1 compile-app-2",
+        "compile": "npm run clean && npm-run-all compile-lib-common compile-lib1 compile-lib2 compile-lib3 compile-lib4 compile-lib5 compile-lib6 compile-app-1 compile-app-2 compile-app-3",
         "clean": "rimraf dist",
 
         "lib-common-component:add": "ng g c --prefix common --project lib-common components/$npm_config_name",
