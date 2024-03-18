@@ -65,14 +65,9 @@
         "wait-lib8-build-lib9": "npm run wait-lib8 && npm run build-lib9",
         "wait-lib9-serve-app-3": "npm run wait-lib9 && ng serve app-3 -o --port 4203",
 
-
-
-
         "app-1": "npm run clean && npm-run-all --parallel build-lib-common wait-lib-common-build-lib2 wait-lib2-build-lib3 wait-lib3-build-lib1 wait-lib1-serve-app-1",
         "app-2": "npm run clean && npm-run-all --parallel build-lib-common wait-lib-common-build-lib4 wait-lib4-build-lib5 wait-lib5-build-lib1 wait-lib1-build-lib3 wait-lib3-serve-app-2",
         "app-3": "npm run clean && npm-run-all --parallel build-lib-common wait-lib-common-build-lib6 wait-lib6-build-lib7 wait-lib7-build-lib8 wait-lib8-build-lib9 wait-lib9-serve-app-3"
-
-
     },
     "private": true,
     "dependencies": {
