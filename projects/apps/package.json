@@ -20,7 +20,6 @@
         "compile-lib10": "ng build lib10 --configuration production",
         "compile-lib11": "ng build lib11 --configuration production",
 
-
         "compile-app-1": "ng build app-1 --configuration production",
         "compile-app-2": "ng build app-2 --configuration production",
         "compile-app-3": "ng build app-3 --configuration production",
@@ -39,7 +38,6 @@
         "build-lib10": "ng build lib10 --watch",
         "build-lib11": "ng build lib11 --watch",
 
-
         "wait-lib-common": "wait-on dist/lib-common/public-api.d.ts",
         "wait-lib1": "wait-on dist/lib1/public-api.d.ts",
         "wait-lib2": "wait-on dist/lib2/public-api.d.ts",
@@ -53,13 +51,10 @@
         "wait-lib10": "wait-on dist/lib10/public-api.d.ts",
         "wait-lib11": "wait-on dist/lib11/public-api.d.ts",
 
-
-
         "capp-1": "npm-run-all compile-lib-common compile-app-1",
         "capp-2": "npm-run-all compile-lib-common compile-app-2",
         "capp-3": "npm-run-all compile-lib-common compile-app-3",
         "capp-4": "npm-run-all compile-lib-common compile-app-4",
-
 
         "wait-lib-common-build-lib2": "npm run wait-lib-common && npm run build-lib2",
         "wait-lib2-build-lib3": "npm run wait-lib2 && npm run build-lib3",
@@ -78,9 +73,20 @@
         "wait-lib8-build-lib9": "npm run wait-lib8 && npm run build-lib9",
         "wait-lib9-serve-app-3": "npm run wait-lib9 && ng serve app-3 -o --port 4203",
 
+        "wait-lib-common-build-lib7": "npm run wait-lib-common && npm run build-lib7",
+        "wait-lib7-build-lib6": "npm run wait-lib7 && npm run build-lib6",
+        "wait-lib6-build-lib9": "npm run wait-lib6 && npm run build-lib9",
+        "wait-lib9-build-lib8": "npm run wait-lib9 && npm run build-lib8",
+        "wait-lib8-build-lib1": "npm run wait-lib8 && npm run build-lib1",
+        "wait-lib1-build-lib10": "npm run wait-lib1 && npm run build-lib10",
+        "wait-lib10-build-lib11": "npm run wait-lib10 && npm run build-lib11",
+        "wait-lib11-serve-app-4": "npm run wait-lib11 && ng serve app-4 -o --port 4204",
+
         "app-1": "npm run clean && npm-run-all --parallel build-lib-common wait-lib-common-build-lib2 wait-lib2-build-lib3 wait-lib3-build-lib1 wait-lib1-serve-app-1",
         "app-2": "npm run clean && npm-run-all --parallel build-lib-common wait-lib-common-build-lib4 wait-lib4-build-lib5 wait-lib5-build-lib1 wait-lib1-build-lib3 wait-lib3-serve-app-2",
-        "app-3": "npm run clean && npm-run-all --parallel build-lib-common wait-lib-common-build-lib6 wait-lib6-build-lib7 wait-lib7-build-lib8 wait-lib8-build-lib9 wait-lib9-serve-app-3"
+        "app-3": "npm run clean && npm-run-all --parallel build-lib-common wait-lib-common-build-lib6 wait-lib6-build-lib7 wait-lib7-build-lib8 wait-lib8-build-lib9 wait-lib9-serve-app-3",
+        "app-4": "npm run clean && npm-run-all --parallel build-lib-common wait-lib-common-build-lib7 wait-lib7-build-lib6 wait-lib6-build-lib9 wait-lib9-build-lib8 wait-lib8-build-lib1 wait-lib1-build-lib10 wait-lib10-build-lib11 wait-lib11-serve-app-4"
+
     },
     "private": true,
     "dependencies": {
