@@ -16,9 +16,6 @@
             "lib1": [
                 "dist/lib1"
             ],
-            "lib10": [
-              "dist/lib10"
-            ],
             "lib2": [
                 "dist/lib2"
             ],
@@ -42,6 +39,12 @@
             ],
             "lib9": [
                 "dist/lib9"
+            ],
+            "lib10": [
+                "dist/lib10"
+            ],
+            "lib11": [
+                "dist/lib11"
             ]
         },
         "noFallthroughCasesInSwitch": true,

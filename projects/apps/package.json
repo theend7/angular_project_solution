@@ -2,7 +2,7 @@
     "name": "apps",
     "version": "0.0.0",
     "scripts": {
-        "compile": "npm run clean && npm-run-all compile-lib-common compile-lib1 compile-lib2 compile-lib3 compile-lib4 compile-lib5 compile-lib6 compile-lib7 compile-lib8 compile-lib9 compile-lib10 compile-app-1 compile-app-2 compile-app-3 compile-app-4",
+        "compile": "npm run clean && npm-run-all compile-lib-common compile-lib1 compile-lib2 compile-lib3 compile-lib4 compile-lib5 compile-lib6 compile-lib7 compile-lib8 compile-lib9 compile-lib10 compile-lib11 compile-app-1 compile-app-2 compile-app-3 compile-app-4",
         "clean": "rimraf dist",
 
         "lib-common-component:add": "ng g c --prefix common --project lib-common components/$npm_config_name",
@@ -18,6 +18,8 @@
         "compile-lib8": "ng build lib8 --configuration production",
         "compile-lib9": "ng build lib9 --configuration production",
         "compile-lib10": "ng build lib10 --configuration production",
+        "compile-lib11": "ng build lib11 --configuration production",
+
 
         "compile-app-1": "ng build app-1 --configuration production",
         "compile-app-2": "ng build app-2 --configuration production",
@@ -35,6 +37,8 @@
         "build-lib8": "ng build lib8 --watch",
         "build-lib9": "ng build lib9 --watch",
         "build-lib10": "ng build lib10 --watch",
+        "build-lib11": "ng build lib11 --watch",
+
 
         "wait-lib-common": "wait-on dist/lib-common/public-api.d.ts",
         "wait-lib1": "wait-on dist/lib1/public-api.d.ts",
@@ -47,6 +51,8 @@
         "wait-lib8": "wait-on dist/lib8/public-api.d.ts",
         "wait-lib9": "wait-on dist/lib9/public-api.d.ts",
         "wait-lib10": "wait-on dist/lib10/public-api.d.ts",
+        "wait-lib11": "wait-on dist/lib11/public-api.d.ts",
+
 
 
         "capp-1": "npm-run-all compile-lib-common compile-app-1",
