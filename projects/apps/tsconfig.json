@@ -16,6 +16,9 @@
             "lib1": [
                 "dist/lib1"
             ],
+            "lib10": [
+              "dist/lib10"
+            ],
             "lib2": [
                 "dist/lib2"
             ],
