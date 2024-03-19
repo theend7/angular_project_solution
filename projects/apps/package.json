@@ -2,7 +2,7 @@
     "name": "apps",
     "version": "0.0.0",
     "scripts": {
-        "compile": "npm run clean && npm-run-all compile-lib-common compile-lib1 compile-lib2 compile-lib3 compile-lib4 compile-lib5 compile-lib6 compile-lib7 compile-lib8 compile-lib9 compile-app-1 compile-app-2 compile-app-3",
+        "compile": "npm run clean && npm-run-all compile-lib-common compile-lib1 compile-lib2 compile-lib3 compile-lib4 compile-lib5 compile-lib6 compile-lib7 compile-lib8 compile-lib9 compile-app-1 compile-app-2 compile-app-3 compile-app-4",
         "clean": "rimraf dist",
 
         "lib-common-component:add": "ng g c --prefix common --project lib-common components/$npm_config_name",
@@ -21,6 +21,7 @@
         "compile-app-1": "ng build app-1 --configuration production",
         "compile-app-2": "ng build app-2 --configuration production",
         "compile-app-3": "ng build app-3 --configuration production",
+        "compile-app-4": "ng build app-4 --configuration production",
 
         "build-lib-common": "ng build lib-common --watch",
         "build-lib1": "ng build lib1 --watch",
@@ -47,6 +48,8 @@
         "capp-1": "npm-run-all compile-lib-common compile-app-1",
         "capp-2": "npm-run-all compile-lib-common compile-app-2",
         "capp-3": "npm-run-all compile-lib-common compile-app-3",
+        "capp-4": "npm-run-all compile-lib-common compile-app-4",
+
 
         "wait-lib-common-build-lib2": "npm run wait-lib-common && npm run build-lib2",
         "wait-lib2-build-lib3": "npm run wait-lib2 && npm run build-lib3",
