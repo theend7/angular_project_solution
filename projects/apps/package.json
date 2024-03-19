@@ -86,7 +86,6 @@
         "app-2": "npm run clean && npm-run-all --parallel build-lib-common wait-lib-common-build-lib4 wait-lib4-build-lib5 wait-lib5-build-lib1 wait-lib1-build-lib3 wait-lib3-serve-app-2",
         "app-3": "npm run clean && npm-run-all --parallel build-lib-common wait-lib-common-build-lib6 wait-lib6-build-lib7 wait-lib7-build-lib8 wait-lib8-build-lib9 wait-lib9-serve-app-3",
         "app-4": "npm run clean && npm-run-all --parallel build-lib-common wait-lib-common-build-lib7 wait-lib7-build-lib6 wait-lib6-build-lib9 wait-lib9-build-lib8 wait-lib8-build-lib1 wait-lib1-build-lib10 wait-lib10-build-lib11 wait-lib11-serve-app-4"
-
     },
     "private": true,
     "dependencies": {
